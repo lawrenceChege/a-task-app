@@ -4,7 +4,7 @@ import "../imports/api/test.tasks.js";
 describe("todo-app", function () {
   it("package.json has correct name", async function () {
     const { name } = await import("../package.json");
-    assert.strictEqual(name, "todo-app");
+    assert.strictEqual(name, "a-task-app");
   });
 
   if (Meteor.isClient) {
