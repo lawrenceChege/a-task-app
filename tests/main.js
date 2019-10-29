@@ -1,9 +1,10 @@
 import assert from "assert";
+import "../imports/api/test.tasks.js";
 
-describe("a-task-app", function () {
+describe("todo-app", function () {
   it("package.json has correct name", async function () {
     const { name } = await import("../package.json");
-    assert.strictEqual(name, "a-task-app");
+    assert.strictEqual(name, "todo-app");
   });
 
   if (Meteor.isClient) {
